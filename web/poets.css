@@ -1,0 +1,132 @@
+body {
+  background-color:#C7C0B6;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 0px;
+  padding:0px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#cpanel {
+  width: 20%;
+  background-color:#656565;
+  
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 1px #333;
+  
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
+  position: fixed;
+  top:0px;
+  left:50%;
+  
+  margin-left: -10%;
+  
+  text-align: center;
+}
+
+#cpanel > a {
+  padding: 20px 0px;
+  display:block;
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+}
+
+.animated {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.roller-move-animated {
+  -webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+-webkit-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+   -moz-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+     -o-transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+        transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+
+-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1); /* older webkit */
+-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+   -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+     -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); 
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
+}
+
+.unselecatble {
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+
+#poet-container {
+  width:100%;
+}
+
+.poet {
+  background-color:#515B5D;
+  color:#A19C86;
+  
+  font-weight: bold;
+  text-align:left;
+  font-size: 110%;
+  
+  border-bottom: solid 1px #223241;
+  
+  cursor:pointer;
+}
+
+.poet > .title {
+  padding: 1% 0.5%;
+  color:#C7C0B6;
+}
+
+.poet > .title:hover,
+.poet.active > .title {
+  color:#0a090f;
+  background-color:#c5c5d9;
+}
+
+.poet > .content {
+  overflow:hidden;
+  height:0px;
+}
+
+.poet > .content > .translates {
+  overflow:hidden;
+  padding: 10px 30px;
+  line-height: 1.2em;
+  margin:0px;
+}
+
+.translates > .translate {
+  width:300px;
+  float:left;
+  background-color:#243642;
+  padding: 5px;
+  margin-right: 20px;
+}
+
+.translates > .translate > .translator {
+  color:white;
+  font-size:15px;
+  margin-bottom:5px;
+  font-weight: normal;
+}
+
+
+@media all and (max-width:801px) {
+  
+  .poet {
+    font-size: 12px;
+  }
+  
+  .poet > .title {
+    padding: 2% 1%;
+  }
+  
+}

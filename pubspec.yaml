@@ -1,0 +1,5 @@
+name: poets
+author: Metál Ádám
+description: A sample list view and slider
+dependencies:
+  browser: any
